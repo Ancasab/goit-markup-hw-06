@@ -492,7 +492,7 @@ body {
 }
 
 .footer__address a {
-    color: var(--white);
+    color: var(--gray);
     text-decoration: none;
     cursor: pointer;
 }
@@ -500,11 +500,11 @@ body {
 .footer__social {
     margin-top: 75px;
     margin-left: 70px;
-    margin-right: 878px;
+    margin-right: 93px;
+    margin-bottom: 86px;
     display: flex;
     width: 206px;
     height: 80px;
-    color: var(--white);
     flex-direction: column;
 }
 
@@ -534,20 +534,56 @@ body {
     stroke: white;
 }
 
-.footer__address a {
-    color: var(--gray);
-}
 
-.footer__social p {
+.footer__social p,
+.footer_form p {
     font-size: 14px;
     font-weight: 700px;
     line-height: 1.17;
     letter-spacing: 0.03em;
+    color: var(--white);
 }
 
 .footer__social__list li:hover,
 .footer__social__list li:focus {
     background-color: var(--blue);
+}
+.footer_formular {
+    width: 570px;
+    height: 86px;
+    margin-top: 72px;
+    margin-bottom: 93px;
+    display: flex;
+    /* justify-content:flex-start; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+.footer_email {
+    width: 358px;
+    height: 50px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--black-background);
+    border-radius: 4px 0px 0px 0px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.footer_btn {
+    width: 200px;
+    height: 50px;
+    color: var(--white);
+    border-radius: 4px 0px 0px 0px;
+    background: var(--blue);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 /* PORTOFOLIU style */
