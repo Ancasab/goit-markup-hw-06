@@ -61,7 +61,9 @@
         </div>
       </div>
     </header>
+
     <!--portiune principala a paginii Studio -->
+
     <main>
       <!--Hero section-->
 
@@ -448,7 +450,12 @@
                 name="email"
                 placeholder="E-mail"
               />
-              <button class="footer_btn" type="submit">Subscribe</button>
+              <button class="footer_btn" type="submit">
+                Subscribe
+                <svg class="footer_btn__icon">
+                  <use href="./images/icons1.svg#icon-Action" />
+                </svg>
+              </button>
             </label>
           </form>
         </div>
@@ -456,16 +463,72 @@
     </footer>
 
     <!-- Marcaj MODAL cu backdrop, fereastra si buton inchidere -->
+
     <div data-modal class="is-hidden">
       <div data-modal-content>
-        <h2>FEREASTRA MODALA</h2>
         <button data-modal-close type="button">
           <a href="">
             <svg class="buton-modal__X">
-              <use href="./images/symbol-defs.svg#icon-Vector-1-1" />
+              <use href="./images/icons1.svg#icon-Vector-1-1" />
             </svg>
           </a>
         </button>
+        <h2 class="modal-title">
+          Leave your information and we'll call you back
+        </h2>
+        <form class="modal_form" name="modal_form">
+          <label class="modal_form__label">
+            Name
+            <input type="text" name="name" class="modal_form__input" />
+            <svg class="modal_form__icon">
+              <use href="./images/icons1.svg#icon-persoana" />
+            </svg>
+          </label>
+          <label class="modal_form__label">
+            Telephone
+            <input type="tel" name="telephone" class="modal_form__input" />
+            <svg class="modal_form__icon">
+              <use href="./images/icons1.svg#icon-telephone" />
+            </svg>
+          </label>
+          <label class="modal_form__label">
+            E-mail
+            <input type="email" name="email" class="modal_form__input" />
+            <svg class="modal_form__icon">
+              <use href="./images/icons1.svg#icon-Black_envelop" />
+            </svg>
+          </label>
+          <label class="modal_form__label">
+            Comments
+            <textarea
+              name="comments"
+              rows="5"
+              placeholder="Enter the text"
+              class="modal_form__comments"
+            ></textarea>
+          </label>
+          <label class="modal_form__label modal_form_checked">
+            <input
+              class="modal_form__input checkbox"
+              type="checkbox"
+              name="agreement"
+              value="agreement"
+            />
+            <span class="replace-checkbox modal_box__label">
+              <svg>
+                <use href="./images/icons1.svg#icon-Box" />
+              </svg>
+            </span>
+            <span class="replace-checkbox modal_check__label">
+              <svg>
+                <use href="./images/icons1.svg#icon-icon-check-1-1" />
+              </svg>
+            </span>
+            I agree with the letter and accept the
+            <a href="" class="condition">Terms and Conditions</a>
+          </label>
+          <button type="submit" class="modal_form__btn">Send</button>
+        </form>
       </div>
     </div>
 
