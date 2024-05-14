@@ -557,8 +557,14 @@ body {
     margin-bottom: 93px;
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
-    /* align-items: center; */
+}
+.footer_form__label {
+    display: flex;
+    flex-direction: raw;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    gap:12px;
 }
 .footer_email {
     width: 358px;
@@ -568,7 +574,7 @@ body {
     line-height: 1.25;
     letter-spacing: 0.03em;
     text-align: left;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding-left: 16px;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -588,7 +594,11 @@ body {
     text-align: center;
     border-radius: 4px 0px 0px 0px;
     background: var(--blue);
+    /* margin: 20px 0; */
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
 
 }
@@ -865,29 +875,32 @@ text-align: center;
 .modal_form__input.checkbox {
     display: none;
 }
-.modal_check__label svg {
-    display: none;
+.modal_check__label {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--black);
+    border-radius: 2px;
 }
 
-.replace-checkbox svg {
+.modal_form__input.checkbox:checked +.replace-checkbox {
+    background-color: var(--blue);
+    border-color: var(--blue);
+} 
+.modal_check__label svg {
+    position: absolute;
     width: 16px;
     height: 15px;
-    position:absolute;
-    top:5px;
-    left:3px;
+    top: -1px;
+    left:0px;
+    display: none;
+    fill: var(--white);
+    
 }
 
 .modal_form__input.checkbox:checked + .modal_check__label svg {
     display: block;
-    z-index: 2;
-   
 }
-.modal_form__input.checkbox:checked +.modal_box__label svg {
-    fill: var(--blue);
-    z-index: 1;
-
-}
-
 
 .modal_form__btn {
     width: 200px;
