@@ -594,12 +594,11 @@ body {
     text-align: center;
     border-radius: 4px 0px 0px 0px;
     background: var(--blue);
-    /* margin: 20px 0; */
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    cursor: pointer;
 
 }
 .footer_btn svg {
@@ -627,6 +626,7 @@ body {
 }
 
 /* butoanele de navigare*/
+
 .portofoliu__navigare button {
     font-weight: 500;
     font-size: 16px;
@@ -780,6 +780,9 @@ body {
     width: 11px;
     height: 11px;
     cursor: pointer;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buton-modal__X:hover,
 .buton-modal__X:focus {
@@ -829,6 +832,9 @@ text-align: center;
     height: 40px;
     border: 1px solid #21212133;
     padding-left: 30px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal_form__comments {
@@ -842,6 +848,9 @@ text-align: center;
     color: var(--gray) 50%;
     border: 1px solid #21212133;
     border-radius: 4px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .modal_form_checked {
